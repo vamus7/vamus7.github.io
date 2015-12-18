@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <title>
+       Moje práce
+   </title>
+   <style>
+        .zelena {
+            background-color: green;
+        }
+        #red-background-id {
+            background-color: red;
+        }
+        .box {
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
+  
+        .yellow-box {
+            background-color: yellow;
+            padding:20px;
+        }
+        .red-box {
+            background-color: red;
+            margin:30px;
+        }
+        .green-box {
+            background-color: green;
+            padding-top:10px;
+            padding-right:20px;
+            padding-bottom:30px;
+            padding-left:40px;
+        }
+   </style>
+</head>
+
+
+<body>
+    <form action="zpracovani.html">
+        <input type="text" placeholder="napiš sem název hry"/>
+        <button type="submit">odešli data</button><br>
+        <div class="zelena">
+            <label><input type="radio" name="jazyky" checked> čeština</label><br>
+            <label><input type="radio" name="jazyky"> angličtina</label><br>
+            <label><input type="radio" name="jazyky"> němčina</label><br>
+            <label id="red-background-id"><input type="checkbox" name="barvy"> red</label><br>
+            <label><input type="checkbox" name="barvy" checked> white</label><br>
+            <label><input type="checkbox" name="barvy"> blue</label><br>
+        </div>
+
+    </form>
+    <div class="box yellow-box">
+        yellow box
+        <div class="red-box">red box</div>
+        <div class="green-box">green box</div>
+    </div>
+</body>
